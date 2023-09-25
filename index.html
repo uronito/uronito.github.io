@@ -6,9 +6,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+ 
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script src="public/js/jquery.circle-progress.min.js"></script>
+  <script type="module" src="./public/js/main3.js?v=1212121"></script>
 
-<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
-<script src="circle-progress.js"></script>
+
 
 
 
@@ -54,27 +58,17 @@
     </div>
 </div> -->
  
+&nbsp;
+<div class="progress" style="position:fixed;background-image:url(./public/img/simbolo_kame.png);background-size:contain;"><img style="position:absolute;bottom:15px;right:15px;" width="170px" src="./public/img/simbolo_kame.png"></div>
 
-&nbsp;<div id="circle" style="position:fixed;" >
-<img src="./public/img/simbolo_kame.png" style="position:relative;width:170px;height:170px; position:absolute;bottom:15px;right:15px;" >
-</div>
-
-<script>
-  $('#circle').circleProgress({
-    value: 0,
-    size: 200,
-    fill: {
-      gradient: ["yellow", "blue"]
-    },
-    insertMode: "append"  ,
-    startAngle:-Math.PI/2,
-    animationStartValue: 0,
-    lineCap:"round",
-    duration: 500
-    
-    });
-</script>
-
+<svg style="display:hidden;position:fixed;">
+  <!-- Gradient (just need to insert in the <svg> tag. The ID must be unique) -->
+  <linearGradient id="linear-gradient">
+    <stop offset="0%" stop-color="#000046"/>
+   
+    <stop offset="100%" stop-color="#1CB5E0"/>
+  </linearGradient>
+</svg>
 
 
 
@@ -94,12 +88,11 @@
     </div>
     <div class="info_wrapper" >
        <div class="info_container" style="margin-top:60px;position:fixed;color:white;">
-        <p  style="font-size:65px;font-family: 'Anton', sans-serif;letter-spacing:5px"><b>ALBERTO</b></p>
+        <p  class="texto" style="font-size:65px;font-family: 'Anton', sans-serif;letter-spacing:5px"><b>ALBERTO</b></p>
       </div>
     </div>
 
 </div>
   </body>
-  
-  <script type="module" src="./public/js/main2.js?v=1212121"></script>
+ 
 </html>
