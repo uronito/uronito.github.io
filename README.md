@@ -1,4 +1,4 @@
-# ✏️ NZXT Starfield Compass Web Integration
+# ✏️ Dragon Ball Nzxt Web Integration
 
 <div align="center">
 
