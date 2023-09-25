@@ -1,0 +1,105 @@
+<html>
+  <header>
+  <meta charset="UTF-8">
+  <meta http-equiv="pragma" content="no-cache" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+<script src="//code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="circle-progress.js"></script>
+
+
+
+    <title>NZXT Starfield Compass Web Integration</title>
+    <link rel="stylesheet" href="./public/css/style7.css" />
+  </header>
+  <body>
+  
+  
+    <br><br>
+<div class="info_wrapper" >
+       <div class="info_container" >
+        <div style="display:inline-block;margin-left:16px;">
+        <img  width="100px" src="./public/img/tortuga.png">
+        </div>
+       
+        <div style="display:inline-block;">
+        <img  width="100px" src="./public/img/cpu2.png">
+        </div>
+      </div>
+      &nbsp;&nbsp;&nbsp;
+      <div style="display:inline-block;margin-left:80px;">
+        <img  width="100px" src="./public/img/tarjeta-grafica2.png">
+        </div>
+       
+        <div style="display:inline-block;margin-right:20px;margin-left:-20px;">
+        <img  width="80px" src="./public/img/Krillin.png" style="max-height:105px;">
+        </div>
+
+</div>
+    <div class="info_wrapper ">
+      <div class="info_container">
+        <p id="cpu_temp" class="info"><b>42º</b></p>
+       
+      </div>
+
+      
+ <!-- &nbsp;<div class="container" style="position:absolute;">
+    <div id="activeBorder" class="active-border">
+        <div id="circle" class="circle">
+            
+        </div>
+    </div>
+</div> -->
+ 
+
+&nbsp;<div id="circle" style="position:fixed;" >
+<img src="./public/img/simbolo_kame.png" style="position:relative;width:170px;height:170px; position:absolute;bottom:15px;right:15px;" >
+</div>
+
+<script>
+  $('#circle').circleProgress({
+    value: 0,
+    size: 200,
+    fill: {
+      gradient: ["yellow", "blue"]
+    },
+    insertMode: "append"  ,
+    startAngle:-Math.PI/2,
+    animationStartValue: 0,
+    lineCap:"round",
+    duration: 500
+    
+    });
+</script>
+
+
+
+
+      <!--<div class="alberto" style="background:url('public/img/simbolo_kame.png');background-size: contain;background-repeat: no-repeat;  width: 150px;height: 150px;position:fixed;border: 4px solid blue;border-radius:50%;" ></div> -->
+     
+
+      <div class="info_container">
+        <p id="gpu_temp" class="info"><b>69º</b></p>
+        
+      </div>
+    </div>
+    <div class="info_wrapper2">
+    <div class="info_container">
+        <p id="ram_usage" class="info2"><b>0 GHZ</b></p>
+        
+      </div>
+    </div>
+    <div class="info_wrapper" >
+       <div class="info_container" style="margin-top:60px;position:fixed;color:white;">
+        <p  style="font-size:65px;font-family: 'Anton', sans-serif;letter-spacing:5px"><b>ALBERTO</b></p>
+      </div>
+    </div>
+
+</div>
+  </body>
+  
+  <script type="module" src="./public/js/main2.js?v=1212121"></script>
+</html>
